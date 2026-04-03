@@ -8,37 +8,37 @@ const Section5 = () => {
     {
       question: "What is A&O Essentials?",
       answer:
-        "We offer designer-inspired handbags carefully selected for quality and style. Each piece is inspected and verified before listing.",
+        "A&O Essentials curates stylish, high-quality designer-inspired handbags for everyday wear. We focus on value, honest descriptions, and meticulous product photos so you can shop with confidence. Think of our collection as accessible, fashion-forward pieces that deliver premium looks without the designer price tag.",
     },
     {
       question: "How do I buy from this site?",
       answer:
-        "Currently, we ship across the United States with secure delivery. International shipping options may be added soon.",
+        "This site is a credibility hub, purchases are completed via Instagram. Tap \"Shop via Instagram\" on any product to open a DM with a pre-filled message (item name, your city). We'll respond quickly with price, shipping, and payment options and hold items on request until payment is confirmed.",
     },
     {
       question: "Can I track my shipping if  I place an Order?",
       answer:
-        "You can reserve items directly via Instagram or contact us through WhatsApp for quick assistance.",
+        "Yes, all orders ship with tracking from our U.S./Canada fulfillment and you'll receive a tracking number once the label is created. For higher-value orders we offer insured shipping and signature on delivery for added peace of mind. If you need expedited or insured options, DM us before purchase and we'll confirm costs.",
     },
     {
       question: "Where are you located?",
       answer:
-        "We accept secure payments via bank transfer and other trusted payment options provided during checkout.",
+        "We operate fulfillment from locations in the United States and Canada to deliver fast, reliable shipping across North America. Product listings will indicate the ship-from location when relevant; if you need a specific dispatch origin or shipping speed, let us know in your DM and we'll accommodate where possible.",
     },
     {
       question: "What’s my guarantee since the bags are preowned?",
       answer:
-        "Returns are handled on a case-by-case basis. Please review product details carefully before purchasing.",
+        "Every listing includes multiple high-resolution photos and clear condition notes so you know exactly what you're buying. If an item is described as pre-owned, we outline wear and provide measurements; for new or \"like-new\" items we say so explicitly. We accept returns within 7 days for items materially not as described — buyer pays return shipping unless we misrepresented the product.",
     },
     {
       question: "Are your bags original designer bags with label and code?",
       answer:
-        "Delivery typically takes 2–5 business days depending on your location within the U.S.",
+        "No — our products are designer-inspired and clearly labelled as such. We do not claim affiliation with or authenticity of designer trademarks. All product pages explicitly state material, construction and whether an item is branded, inspired, or unbranded so buyers can choose with full transparency.",
     },
     {
       question: " What’s your returns policy?",
       answer:
-        "Yes, most of our pieces are limited and unique, which means once sold, they may not be restocked.",
+        "We accept returns within 7 days from delivery only if the item is materially different from its description or photos. To start a return, DM us with your order details and we'll issue a return authorization and next steps. Unless we misrepresented the item, customers are responsible for return shipping; insured returns are recommended for higher-value items.",
     },
   ];
 
