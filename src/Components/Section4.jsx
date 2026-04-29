@@ -1,8 +1,46 @@
 import React from "react";
+import { motion } from "framer-motion";
 import video from "../assets/video.png";
 import bags from "../assets/bags.png";
 
 const Section4 = () => {
+
+  // 🌊 smooth fade-up (premium float)
+  const fadeUp = {
+    hidden: { opacity: 0, y: 100 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1.15,
+        ease: [0.25, 0.8, 0.25, 1]
+      }
+    }
+  };
+
+  // 🔥 stagger container
+  const container = {
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren: 0.25
+      }
+    }
+  };
+
+  // 🔽 feature items (slightly faster but still smooth)
+  const item = {
+    hidden: { opacity: 0, y: 90 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        ease: [0.25, 0.8, 0.25, 1]
+      }
+    }
+  };
+
   return (
     <div className="
       w-full
@@ -24,7 +62,13 @@ const Section4 = () => {
       ">
 
         {/* LEFT */}
-        <div className="w-full lg:w-[40%] text-center md:text-left">
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.4 }}
+          className="w-full lg:w-[40%] text-center md:text-left"
+        >
           <h1 className="font-playfair font-bold text-[28px] sm:text-[36px] md:text-[42px] lg:text-[32px]">
             Why Choose Us
           </h1>
@@ -32,43 +76,49 @@ const Section4 = () => {
           <button className="mt-4 px-4 sm:px-6 py-3 bg-[#F6973F] text-[13px] sm:text-[15px] rounded-[8px] text-white font-semibold">
             Shop Now
           </button>
-        </div>
+        </motion.div>
 
         {/* RIGHT FEATURES */}
-        <div className="
-          grid w-full
-          grid-cols-1 sm:grid-cols-2 xl:grid-cols-3
-          gap-6
-        ">
+        <motion.div
+          className="
+            sm:grid w-full
+            flex flex-col items-center sm:grid-cols-2 xl:grid-cols-3
+            gap-6
+          "
+          variants={container}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.4 }}
+        >
 
-          <div className="flex flex-col items-center md:items-start gap-2 max-w-[400px]">
+          <motion.div variants={item} className="flex flex-col justify-center items-center md:items-start gap-2 max-w-[400px]">
             <h1 className="text-[16px] sm:text-[18px] font-semibold">
               Accurate Descriptions
             </h1>
             <p className="font-light text-center md:text-left text-[13px] sm:text-[14px]">
               We describe materials, measurements and condition clearly. What you see in photos is what you get.
             </p>
-          </div>
+          </motion.div>
 
-          <div className="flex flex-col items-center md:items-start gap-2 max-w-[400px]">
+          <motion.div variants={item} className="flex w-full flex-col items-center md:items-start gap-2 max-w-[400px]">
             <h1 className="text-[16px] sm:text-[18px] font-semibold">
               Fast U.S. Shipping
             </h1>
             <p className="font-light text-center md:text-left text-[13px] sm:text-[14px]">
               Orders ship from our U.S. facility with tracking and insured options.
             </p>
-          </div>
+          </motion.div>
 
-          <div className="flex flex-col items-center md:items-start gap-2 max-w-[400px]">
-            <h1 className="text-[16px] md:text-left sm:text-[18px] font-semibold">
+          <motion.div variants={item} className="flex flex-col items-center md:items-start gap-2 max-w-[400px]">
+            <h1 className="text-[16px] sm:text-[18px] font-semibold">
               Customer Care
             </h1>
             <p className="font-light text-center md:text-left text-[13px] sm:text-[14px]">
               Direct DM support and dedicated return policies.
             </p>
-          </div>
+          </motion.div>
 
-        </div>
+        </motion.div>
       </div>
 
       {/* SECTION 2 */}
@@ -80,11 +130,23 @@ const Section4 = () => {
         items-center
       ">
 
-        <div className="w-full lg:w-1/2">
+        <motion.div
+          className="w-full lg:w-1/2"
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2, ease: [0.25, 0.8, 0.25, 1] }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
           <img src={video} className="w-full h-auto" alt="" />
-        </div>
+        </motion.div>
 
-        <div className="w-full lg:w-1/2 flex flex-col gap-2 text-center lg:text-left">
+        <motion.div
+          className="w-full lg:w-1/2 flex flex-col gap-2 text-center lg:text-left"
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2, delay: 0.1, ease: [0.25, 0.8, 0.25, 1] }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
           <span className="text-[#E58411] text-[14px] sm:text-[16px]">
             MEET THE CURATOR
           </span>
@@ -95,11 +157,9 @@ const Section4 = () => {
           </h1>
 
           <p className="mt-2 text-[14px] sm:text-[15px] font-light text-[#1E1E1E] leading-[22px] sm:leading-[25px]">
-            We curate pieces that balance fashion and value. Watch the short
-            video to learn how we test materials, photograph items, and
-            prepare shipments so you can buy with confidence.
+            We curate pieces that balance fashion and value. Watch the short video to learn how we test materials, photograph items, and prepare shipments so you can buy with confidence.
           </p>
-        </div>
+        </motion.div>
       </div>
 
       {/* SECTION 3 */}
@@ -111,11 +171,23 @@ const Section4 = () => {
         items-center
       ">
 
-        <div className="w-full lg:w-1/2">
+        <motion.div
+          className="w-full lg:w-1/2"
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2, ease: [0.25, 0.8, 0.25, 1] }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
           <img src={bags} className="w-full h-auto" alt="" />
-        </div>
+        </motion.div>
 
-        <div className="w-full lg:w-1/2 flex flex-col gap-2 text-center lg:text-left">
+        <motion.div
+          className="w-full lg:w-1/2 flex flex-col gap-2 text-center lg:text-left"
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.2, delay: 0.1, ease: [0.25, 0.8, 0.25, 1] }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
           <span className="text-[#E58411] text-[14px] sm:text-[16px]">
             CLASSIC COLLECTIONS
           </span>
@@ -132,7 +204,7 @@ const Section4 = () => {
           <button className="mt-4 px-6 py-3 bg-[#F6973F] w-full sm:w-auto max-w-[220px] mx-auto lg:mx-0 rounded-[8px] text-white font-semibold">
             Order from Instagram
           </button>
-        </div>
+        </motion.div>
 
       </div>
 

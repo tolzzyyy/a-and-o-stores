@@ -4,7 +4,7 @@ import Hero from './Components/Hero';
 
 const App = () => {
   return (
-    <div className='overflow-hidden max-w-full '>
+    <div className='max-w-full '>
       <Navbar /> 
       <Hero />    
     </div>
