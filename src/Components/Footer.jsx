@@ -10,7 +10,8 @@ const Footer = () => {
         <div className="flex flex-col items-start mb-6 md:mb-0">
           <img src={logo} alt="Logo" className="w-[83px] mb-2" />
           <p className="text-[#1E1E1E] max-w-[563px] text-[14px]">
-           A&O Essential Thrift store is here to deliver designer-inspired <br /> high quality handbags to suit your classic style and demands.
+            A&O Essential Thrift store is here to deliver designer-inspired{" "}
+            <br /> high quality handbags to suit your classic style and demands.
           </p>
         </div>
 
@@ -20,11 +21,17 @@ const Footer = () => {
           <div className="flex space-x-6">
             <div className="flex flex-col text-black items-center">
               <a href="https://www.instagram.com/aandoessentialsstore?utm_source=ig_web_button_share_sheet&igsh=ODdmZWVhMTFiMw==">
-              <FaInstagram className="text-3xl mb-1  transition-colors" />
+                <FaInstagram className="text-3xl mb-1  transition-colors" />
               </a>
             </div>
             <div className="flex flex-col text-black items-center">
-              <FaWhatsapp className="text-3xl mb-1 transition-colors" />
+              <a
+                href="https://wa.me/13477605830"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaWhatsapp className="text-3xl mb-1 transition-colors" />
+              </a>
             </div>
             <div className="flex flex-col text-black items-center">
               <FaTiktok className="text-3xl mb-1  transition-colors" />
@@ -34,7 +41,11 @@ const Footer = () => {
       </div>
 
       <p className=" text-[#C91B1B] text-[14px] ">
-   Disclaimer: All products sold by A&O essentials are “designer-inspired” and not trademarked goods. A&O Essentials does not sell counterfeit or trademark-infringing products, customers should  understand and comply with their local laws and regulations when purchasing non-branded fashion goods.
+        Disclaimer: All products sold by A&O essentials are “designer-inspired”
+        and not trademarked goods. A&O Essentials does not sell counterfeit or
+        trademark-infringing products, customers should understand and comply
+        with their local laws and regulations when purchasing non-branded
+        fashion goods.
       </p>
     </footer>
   );
