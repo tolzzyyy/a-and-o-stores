@@ -13,19 +13,19 @@ const testimonials = [
   {
     img: user1,
     name: "Jane Doe",
-    text: "Absolutely love my new handbag! The quality is amazing and shipping was so fast.",
+    text: "The bag arrived exactly as shown and the quality was better than i expected.Beautiful packaging, fast response, and a very smooth buying process",
     rating: 5,
   },
   {
     img: user1,
     name: "Mary Smith",
-    text: "A&O Essentials curated pieces are stunning! Very happy with my purchase.",
+    text: "I loved how clear the product photos and details were. it felt easy to shop, and the bag looked even better in person.",
     rating: 4,
   },
   {
     img: user1,
     name: "Linda Johnson",
-    text: "Great experience and beautiful bags. Customer service was very helpful.",
+    text: "Very stylish pieces, quick communication, and a premium feel from start to finish. i woukd definitely shop again",
     rating: 5,
   },
   {

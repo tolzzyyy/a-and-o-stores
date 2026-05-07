@@ -19,7 +19,9 @@ const Footer = () => {
           <h3 className="text-black font-semibold mb-4">Shop From Us Today</h3>
           <div className="flex space-x-6">
             <div className="flex flex-col text-black items-center">
+              <a href="https://www.instagram.com/aandoessentialsstore?utm_source=ig_web_button_share_sheet&igsh=ODdmZWVhMTFiMw==">
               <FaInstagram className="text-3xl mb-1  transition-colors" />
+              </a>
             </div>
             <div className="flex flex-col text-black items-center">
               <FaWhatsapp className="text-3xl mb-1 transition-colors" />
