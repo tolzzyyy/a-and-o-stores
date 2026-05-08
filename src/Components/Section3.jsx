@@ -2,6 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import bag1 from "../assets/bag1.png";
 import bag2 from "../assets/bag2.png";
+import bag3 from "../assets/louiv.png";
+import bag4 from "../assets/chain.png";
 
 const Section3 = () => {
 
@@ -79,19 +81,39 @@ const Section3 = () => {
         sm:grid-cols-2
         lg:grid-cols-4
         w-full
+        place-items-center
       ">
 
-        {[bag1, bag2, bag1, bag1].map((bag, index) => (
+        {[bag1, bag2, bag3, bag4].map((bag, index) => (
           <motion.div
             key={index}
             variants={cardVariant}
-            className="md:w-full md:max-w-[350px] w-[200px] mx-auto"
+            className="
+              w-full
+              max-w-[420px]
+              flex
+              justify-center
+            "
           >
-            <div className="w-full rounded-xl overflow-hidden">
+            <div
+              className="
+                w-full
+                h-[420px]
+                sm:h-[470px]
+                md:h-[540px]
+                flex
+                items-center
+                justify-center
+              "
+            >
               <img
                 src={bag}
                 alt=""
-                className="w-full object-contain"
+                className="
+                  w-full
+                  h-full
+                  object-contain
+                "
               />
             </div>
           </motion.div>

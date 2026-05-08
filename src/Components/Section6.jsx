@@ -12,19 +12,19 @@ import bagImage from "../assets/bag1.png";
 const testimonials = [
   {
     img: user1,
-    name: "Jane Doe",
+    name: "First time shopper",
     text: "The bag arrived exactly as shown and the quality was better than i expected.Beautiful packaging, fast response, and a very smooth buying process",
     rating: 5,
   },
   {
     img: user1,
-    name: "Mary Smith",
+    name: "Returning Customer",
     text: "I loved how clear the product photos and details were. it felt easy to shop, and the bag looked even better in person.",
     rating: 4,
   },
   {
     img: user1,
-    name: "Linda Johnson",
+    name: "Verified Buyer",
     text: "Very stylish pieces, quick communication, and a premium feel from start to finish. i woukd definitely shop again",
     rating: 5,
   },
