@@ -1,6 +1,7 @@
 import React from "react";
 import { FaInstagram, FaWhatsapp, FaTiktok } from "react-icons/fa";
 import logo from "../assets/logo.png"; // replace with your logo path
+import { instagramUrl, whatsappUrl } from "../contactLinks";
 
 const Footer = () => {
   return (
@@ -20,13 +21,17 @@ const Footer = () => {
           <h3 className="text-black font-semibold mb-4">Shop From Us Today</h3>
           <div className="flex space-x-6">
             <div className="flex flex-col text-black items-center">
-              <a href="https://www.instagram.com/aandoessentialsstore?utm_source=ig_web_button_share_sheet&igsh=ODdmZWVhMTFiMw==">
+              <a
+                href={instagramUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaInstagram className="text-3xl mb-1  transition-colors" />
               </a>
             </div>
             <div className="flex flex-col text-black items-center">
               <a
-                href="https://wa.me/13477605830"
+                href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
               >

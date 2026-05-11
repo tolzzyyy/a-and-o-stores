@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import video from "../assets/video.png";
 import bags from "../assets/bags.png";
+import { instagramUrl } from "../contactLinks";
 
 const Section4 = () => {
 
@@ -73,9 +74,14 @@ const Section4 = () => {
             Why Choose Us
           </h1>
 
-          <button className="mt-4 px-4 sm:px-6 py-3 bg-[#F6973F] text-[13px] sm:text-[15px] rounded-[8px] text-white font-semibold">
+          <a
+            href={instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mt-4 px-4 sm:px-6 py-3 bg-[#F6973F] text-[13px] sm:text-[15px] rounded-[8px] text-white font-semibold text-center"
+          >
             Shop Now
-          </button>
+          </a>
         </motion.div>
 
         {/* RIGHT FEATURES */}
@@ -201,9 +207,14 @@ const Section4 = () => {
             New drops posted weekly on Instagram. Follow for early access and behind-the-scenes peeks.
           </p>
 
-          <button className="mt-4 px-6 py-3 bg-[#F6973F] w-full sm:w-auto max-w-[220px] mx-auto lg:mx-0 rounded-[8px] text-white font-semibold">
+          <a
+            href={instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 px-6 py-3 bg-[#F6973F] w-full sm:w-auto max-w-[220px] mx-auto lg:mx-0 rounded-[8px] text-white font-semibold text-center"
+          >
             Order from Instagram
-          </button>
+          </a>
         </motion.div>
 
       </div>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FaArrowRight, FaArrowUp } from "react-icons/fa";
+import { whatsappUrl } from "../contactLinks";
 
 const Section5 = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -125,9 +126,14 @@ const Section5 = () => {
             and feedback before purchasing from us.
           </p>
 
-          <button className="px-6 py-3 mt-[15px] bg-[#F6973F] w-auto max-w-[200px] w-full rounded-[8px] text-white font-semibold">
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-3 mt-[15px] bg-[#F6973F] w-auto max-w-[200px] w-full rounded-[8px] text-white font-semibold text-center"
+          >
             Send us a message
-          </button>
+          </a>
         </motion.div>
 
       </div>

@@ -8,6 +8,7 @@ import chanel from "../assets/chanel.png";
 import hermes from "../assets/hermes.png";
 import goyard from "../assets/goyard.png";
 import loui from "../assets/loui.png";
+import { instagramUrl } from "../contactLinks";
 
 const Section2 = () => {
   const brands = [dior, gucci, chanel, hermes, goyard, loui];
@@ -134,9 +135,14 @@ const Section2 = () => {
             A&O essentials offers carefully chosen designer-inspired handbags built for everyday style and value.
           </p>
 
-          <button className="mt-4 px-6 py-3 bg-[#F6973F] w-full sm:w-auto max-w-[320px] mx-auto lg:mx-0 rounded-[8px] text-white font-semibold">
+          <a
+            href={instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 px-6 py-3 bg-[#F6973F] w-full sm:w-auto max-w-[320px] mx-auto lg:mx-0 rounded-[8px] text-white font-semibold text-center"
+          >
             View New Arrivals on Instagram
-          </button>
+          </a>
         </motion.div>
 
       </motion.div>

@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { FaStar } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { instagramUrl, whatsappUrl } from "../contactLinks";
 
 import user1 from "../assets/user1.png";
 import bagImage from "../assets/bag1.png";
@@ -216,17 +217,23 @@ const Section6 = () => {
 
               <div className="flex flex-col sm:flex-row items-center gap-[15px] sm:gap-6">
 
-                <button className="w-full sm:w-auto px-3 md:px-6 py-3 bg-[#F6973F] text-[12px] md:text-[15px] rounded-[8px] text-white font-semibold">
-                 <a href="https://www.instagram.com/aandoessentialsstore?utm_source=ig_web_button_share_sheet&igsh=ODdmZWVhMTFiMw==">
+                <a
+                  href={instagramUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto px-3 md:px-6 py-3 bg-[#F6973F] text-[12px] md:text-[15px] rounded-[8px] text-white font-semibold text-center"
+                >
                   Shop via Instagram
-                  </a>
-                </button>
+                </a>
 
-                <button className="w-full sm:w-auto px-2 md:px-6 md:text-[15px] text-[12px] py-3 border border-[#F6973F] rounded-[8px] text-[#F6973F] font-semibold">
-                 <a href="https://wa.me/13477605830">
+                <a
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto px-2 md:px-6 md:text-[15px] text-[12px] py-3 border border-[#F6973F] rounded-[8px] text-[#F6973F] font-semibold text-center"
+                >
                  Message on Whatsapp
-                 </a>
-                </button>
+                </a>
 
               </div>
 

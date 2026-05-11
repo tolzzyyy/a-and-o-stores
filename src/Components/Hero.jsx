@@ -8,6 +8,7 @@ import Section4 from "./Section4";
 import Section5 from "./Section5";
 import Section6 from "./Section6";
 import Footer from "./Footer";
+import { instagramUrl, whatsappUrl } from "../contactLinks";
 
 const Hero = () => {
   const sectionRef = useRef(null);
@@ -54,13 +55,23 @@ const Hero = () => {
           </p>
 
           <div className="mt-6 flex w-full sm:w-auto px-[10px] flex-col sm:flex-row items-center gap-[15px] sm:gap-6">
-            <button className="w-full sm:w-auto px-3 md:px-6 py-3 bg-[#F6973F] text-[12px] md:text-[15px] rounded-[8px] text-white font-semibold">
+            <a
+              href={instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto px-3 md:px-6 py-3 bg-[#F6973F] text-[12px] md:text-[15px] rounded-[8px] text-white font-semibold text-center"
+            >
               Shop via Instagram
-            </button>
+            </a>
 
-            <button className="w-full sm:w-auto px-2 md:px-6 md:text-[15px] text-[12px] py-3 border border-[#F6973F] rounded-[8px] text-[#F6973F] font-semibold">
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto px-2 md:px-6 md:text-[15px] text-[12px] py-3 border border-[#F6973F] rounded-[8px] text-[#F6973F] font-semibold text-center"
+            >
               Message on Whatsapp
-            </button>
+            </a>
           </div>
 
           <div className="mt-6 sm:mt-8">
