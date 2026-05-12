@@ -128,7 +128,7 @@ const Section4 = () => {
       </div>
 
       {/* SECTION 2 */}
-      <div className="
+      <div id="our-ceo" className="
         w-full
         flex flex-col lg:flex-row
         mt-16 md:mt-[120px]
@@ -169,7 +169,7 @@ const Section4 = () => {
       </div>
 
       {/* SECTION 3 */}
-      <div className="
+      <div id="collectives" className="
         w-full
         flex flex-col lg:flex-row-reverse
         mt-16 md:mt-[120px]

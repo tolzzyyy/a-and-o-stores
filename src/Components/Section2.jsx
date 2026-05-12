@@ -51,7 +51,7 @@ const Section2 = () => {
   };
 
   return (
-    <div className="
+    <div id="about" className="
       px-4 sm:px-6 md:px-10 lg:px-[80px] xl:px-[120px]
       bg-white py-14 md:py-24
       max-w-[1600px] mx-auto w-full

@@ -22,7 +22,7 @@ const Hero = () => {
     <div className="relative w-full">
 
       {/* HERO */}
-      <div className="sticky top-0 z-10 w-full max-w-[1600px] mx-auto h-svh overflow-hidden">
+      <div id="home" className="sticky top-0 z-10 w-full max-w-[1600px] mx-auto h-svh overflow-hidden">
 
         <video
           className="absolute top-0 left-0 w-full h-full object-cover"

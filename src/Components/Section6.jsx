@@ -79,7 +79,7 @@ const Section6 = () => {
   return (
     <>
       {/* ── TESTIMONIALS ── */}
-      <div className="px-4 sm:px-6 md:px-10 lg:px-[120px] md:py-[120px] bg-[#FFFBF6] max-w-[1600px] mx-auto w-full">
+      <div id="testimonials" className="px-4 sm:px-6 md:px-10 lg:px-[120px] md:py-[120px] bg-[#FFFBF6] max-w-[1600px] mx-auto w-full">
 
         <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
 

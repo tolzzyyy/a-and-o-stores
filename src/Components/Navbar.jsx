@@ -2,6 +2,16 @@ import React, { useState } from 'react';
 import logo from '../assets/logo.png';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
+const navItems = [
+  { label: "Home", href: "#home" },
+  { label: "About", href: "#about" },
+  { label: "Best Seller", href: "#best-seller" },
+  { label: "Our CEO", href: "#our-ceo" },
+  { label: "Collectives", href: "#collectives" },
+  { label: "Testimonials", href: "#testimonials" },
+  { label: "FAQs", href: "#faqs" },
+];
+
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
@@ -14,22 +24,22 @@ const Navbar = () => {
       py-4
       flex justify-between items-center
       text-white
-    ">
+      ">
 
       {/* LOGO */}
-      <div className="w-[70px] sm:w-[83px] z-40">
+      <a href="#home" className="w-[70px] sm:w-[83px] z-40">
         <img src={logo} alt="logo" />
-      </div>
+      </a>
 
       {/* DESKTOP MENU */}
       <ul className="hidden md:flex text-[14px] font-light gap-6">
-        <li className="hover:text-[#F6973F] cursor-pointer">Home</li>
-        <li className="hover:text-[#F6973F] cursor-pointer">About</li>
-        <li className="hover:text-[#F6973F] cursor-pointer">Best Seller</li>
-        <li className="hover:text-[#F6973F] cursor-pointer">Our CEO</li>
-        <li className="hover:text-[#F6973F] cursor-pointer">Collectives</li>
-        <li className="hover:text-[#F6973F] cursor-pointer">Testimonials</li>
-        <li className="hover:text-[#F6973F] cursor-pointer">FAQs</li>
+        {navItems.map((item) => (
+          <li key={item.href}>
+            <a href={item.href} className="hover:text-[#F6973F] transition-colors">
+              {item.label}
+            </a>
+          </li>
+        ))}
       </ul>
 
       {/* ICON BUTTON */}
@@ -54,13 +64,16 @@ const Navbar = () => {
         ${open ? "translate-y-0" : "-translate-y-full"}
       `}>
 
-        <p onClick={() => setOpen(false)} className="cursor-pointer hover:text-[#F6973F]">Home</p>
-        <p onClick={() => setOpen(false)} className="cursor-pointer hover:text-[#F6973F]">About</p>
-        <p onClick={() => setOpen(false)} className="cursor-pointer hover:text-[#F6973F]">Best Seller</p>
-        <p onClick={() => setOpen(false)} className="cursor-pointer hover:text-[#F6973F]">Our CEO</p>
-        <p onClick={() => setOpen(false)} className="cursor-pointer hover:text-[#F6973F]">Collectives</p>
-        <p onClick={() => setOpen(false)} className="cursor-pointer hover:text-[#F6973F]">Testimonials</p>
-        <p onClick={() => setOpen(false)} className="cursor-pointer hover:text-[#F6973F]">FAQs</p>
+        {navItems.map((item) => (
+          <a
+            key={item.href}
+            href={item.href}
+            onClick={() => setOpen(false)}
+            className="hover:text-black transition-colors"
+          >
+            {item.label}
+          </a>
+        ))}
 
       </div>
 

@@ -49,7 +49,7 @@ const Section5 = () => {
   };
 
   return (
-    <div className="px-4 sm:px-6 bg-[#FFFBF6] md:px-10 lg:px-[120px] py-16 md:py-24 max-w-[1600px] w-full mx-auto">
+    <div id="faqs" className="px-4 sm:px-6 bg-[#FFFBF6] md:px-10 lg:px-[120px] py-16 md:py-24 max-w-[1600px] w-full mx-auto">
 
       <div className="w-full gap-[40px] xl:gap-[100px] items-center flex-col xl:flex-row justify-center flex">
 

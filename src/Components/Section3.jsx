@@ -39,6 +39,7 @@ const Section3 = () => {
 
   return (
     <motion.div
+      id="best-seller"
       className="
         w-full
         px-4 sm:px-6 md:px-10 lg:px-[80px] xl:px-[120px]
